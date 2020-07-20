@@ -11,9 +11,9 @@ def playground (field):
     
     clear_output()
     print("|",field[0],"|",field[1],"|",field[2],"|")
-    print("-------")
+    print("------------")
     print("|",field[3],"|",field[4],"|",field[5],"|")
-    print("-------")
+    print("------------")
     print("|",field[6],"|",field[7],"|",field[8],"|")
 
 def choosing_x_o():
