@@ -20,7 +20,7 @@ def choosing_x_o():
     
     marker = None 
     while not (marker == "X" or marker == "O"):
-        marker = input("Player 1: do you want to be x or o?").upper()
+        marker = input("Player 1: do you want to be x or o?:  ").upper()
     
     if marker == "X":
         print("Player 1 is X")
@@ -36,9 +36,9 @@ def placing(select, player,i,field):
     place = 99
     while not (place >= 0 and place <= 8 and field[place] != "X" and field[place] != "O"):
         if i % 2 == 1:
-            place = int(input("Player 1: Which field do you choose?").upper())
+            place = int(input("Player 1: Which field do you choose? Field number:  ").upper())
         else:
-            place = int(input("Player 2: Which field do you choose?").upper())
+            place = int(input("Player 2: Which field do you choose? Field number:  ").upper())
             
         if place >= 0 and place <= 8 and field[place] != "X" and field[place] != "O":
             field[place] = select[i-1]
@@ -91,7 +91,7 @@ def new_game(win,draw):
     a = 99
     if win == True or draw == True:
         while not (a == 1 or a == 0):
-            a = int(input("Do you want to play a new game? Press 1 for Yes and 0 for No").upper())
+            a = int(input("Do you want to play a new game? Press 1 for Yes and 0 for No:  ").upper())
             if a == 1:
                 return True
             elif a == 0:
